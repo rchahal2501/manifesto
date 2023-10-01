@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <title>Manifesto</title>
+    
+    
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <audio id="click-sound" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
+
+        
+    <!-- Images. -->
+        <img id="texture" src="https://cdn.glitch.global/48110272-8750-4dad-8952-4867594bd0be/water.jpg?v=1696182676857">
+      </a-assets>
+      
+
+      <a-box position="-1 0.5 -3" 
+             rotation="45 45 45" 
+             scale=" 1 2.5 1"
+             animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+             animation__2="property: scale; to: 0.5 1 0.5; loop: true; dur: 15000"
+             animation__3="property: scale; to: 10 30 44; loop: true; dur: 20000"
+             animation__4="property: position; to: -5 0.5 -5; loop: true; dur: 10000"
+             src="#texture">
+      </a-box>
+      
+      <a-entity position="0 3 -1.75" geometry="primitive: plane; width: 2" material="color: #0000FF" text="color: white; align: center; font: dejavu; value: a-text align='center'  2 12999Earliest days moon didnot wax or wane but was always shining as full moon. In Dreamtime the moon was always misbehaving so punishment the moon must die for 3 days.345 Place called valley of the moons where the moons grew out of the richest soil.4443 When each moon had grown large enough to leave valley and venture into night sky,  "></a-entity>
+      <a-entity position="0 2 2" rotation= "0 180 0" geometry="primitive: plane; width: 2" material="color: #0000FF" text="color: white; align: center; font: dejavu; value: a-text align='center' (anchor='align') DejaVu width 00it would break free of its mother plant and float about until it was time234when each moon rose out of the valley each month, the sun - huge hot and powerful - would race across the sky and reach out with its fire fingers to tear off pieces of the moon until it was all gone56789birthplace of moons and stars9040"></a-entity>
+      
+      <a-sound src="src: url(https://cdn.glitch.global/48110272-8750-4dad-8952-4867594bd0be/562283__mpuffenbarger__water-drop-faucet.mp3?v=1696183999780.mp3)" autoplay="true" loop="true" position="0 2 0"></a-sound>
+      <a-sky src="#texture"></a-sky>567890123456789
+    </a-scene>
+  </body>
+</html>
